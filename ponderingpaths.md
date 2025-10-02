@@ -3,15 +3,14 @@ pondering path
 ## Challenge Name
 the root
 ### question
-pwn.college{A2gcmzaTLAQTn_zP5l9nlcYtEPD.dhzN5QDL5gDN1czW}
-
+pwn.college{g7mfOELVrSGz_dNjb0FKw6zpUTk.QX4cTO0wCN5UzNzEzW}
 The root was /pwd so by typing that we get the value
 
 ```bash
 /pwd
 BOOM!!!
 Here is your flag:
-pwn.college{A2gcmzaTLAQTn_zP5l9nlcYtEPD.dhzN5QDL5gDN1czW}
+pwn.college{g7mfOELVrSGz_dNjb0FKw6zpUTk.QX4cTO0wCN5UzNzEzW}
 ```
 
 ### Topics Learnt
@@ -24,7 +23,7 @@ NA
 ## Challenge Name
 Program And Absolute Paths
 ### question
-{AS46hH_bjcXPCh-pbuH6jYHHlpu.dVDN1QDL5gDN1czW}
+pwn.college{Iw6BNa_9qEXiFSdh-wsxJaUzdoD.QX1QTN0wCN5UzNzEzW}
 
 The Flag as we can see was situated in the absolute path so we can start off by typing the / commands and the the file was in /challenge/run
 
@@ -32,7 +31,7 @@ The Flag as we can see was situated in the absolute path so we can start off by 
 /challenge/run
 Correct!!!
 /challenge/run is an absolute path! Here is your flag:
-pwn.college{AS46hH_bjcXPCh-pbuH6jYHHlpu.dVDN1QDL5gDN1czW}
+pwn.college{Iw6BNa_9qEXiFSdh-wsxJaUzdoD.QX1QTN0wCN5UzNzEzW}
 ```
 
 ### Topics Learnt
@@ -48,19 +47,20 @@ NA
 ## Challenge Name
 position thyself
 ### question
-pwn.college{0Iuh__xcUkdPgfmWm53YnxPmLp4.dZDN1QDL5gDN1czW}
-
+pwn.college{ElDbenj9jovQsIFvd9hkPd0akjt.QX2QTN0wCN5UzNzEzW}
 got a directory upon running the command and after visiting the path i ran the command
 
 ```bash
-/cd /proc
-hacker@paths~position-thy-self:/proc$ cd 138
-hacker@paths~position-thy-self:/proc/138$ cd fd
-hacker@paths~position-thy-self:/proc/138/fd$ /challenge/run
+hacker@paths~position-thy-self:~$ /challenge/run
+Incorrect...
+You are not currently in the /usr/share/doc/fontconfig directory.
+Please use the `cd` utility to change directory appropriately.
+hacker@paths~position-thy-self:~$ cd /usr/share/doc/fontconfig
+hacker@paths~position-thy-self:/usr/share/doc/fontconfig$ /challenge/run
 Correct!!!
 /challenge/run is an absolute path, invoked from the right directory!
 Here is your flag:
-pwn.college{0Iuh__xcUkdPgfmWm53YnxPmLp4.dZDN1QDL5gDN1czW}
+pwn.college{ElDbenj9jovQsIFvd9hkPd0akjt.QX2QTN0wCN5UzNzEzW}
 ```
 ### topics learnt
 learned to traverse different directories
@@ -72,18 +72,25 @@ NA
 ## Challenge Name
 Position  Elsewhere
 ### question
-pwn.college{I3N0TX0-oOO7sLdXtXXKJyNfI3-.ddDN1QDL5gDN1czW}
+pwn.college{UNt6C3sfqnac4XMhKD14VX7YmWO.QX3QTN0wCN5UzNzEzW}
 
 got a directory upon running the command and after visiting the path i ran the command
 
 ```bash
-d /proc
-hacker@paths~position-elsewhere:/proc$ cd 138
-hacker@paths~position-elsewhere:/proc/138$ /challenge/run
+hacker@paths~position-elsewhere:~$ /challenge/run
+Incorrect...
+You are not currently in the /home directory.
+Please use the `cd` utility to change directory appropriately.
+hacker@paths~position-elsewhere:~$ cd /home
+hacker@paths~position-elsewhere:/home$ ~$ /home
+-bash: ~$: command not found
+hacker@paths~position-elsewhere:/home$ challenge/run
+-bash: challenge/run: No such file or directory
+hacker@paths~position-elsewhere:/home$ /challenge/run
 Correct!!!
 /challenge/run is an absolute path, invoked from the right directory!
 Here is your flag:
-pwn.college{I3N0TX0-oOO7sLdXtXXKJyNfI3-.ddDN1QDL5gDN1czW}
+pwn.college{UNt6C3sfqnac4XMhKD14VX7YmWO.QX3QTN0wCN5UzNzEzW}
 ```
 
 ### topics learnt
@@ -97,17 +104,24 @@ NA
 ## Challenge Name
 Position Yet ElseWhere
 ### question
-pwn.college{wPw1hhXEM2LaSsOtci4ttcw_j6C.dhDN1QDL5gDN1czW}
+pwn.college{4Jw86Imc3qykpRloLY9JUfgbSFD.QX4QTN0wCN5UzNzEzW}
+
 
 got a directory upon running the command and after visiting the path i ran the command
 
 ```bash
-challenge/run
+hacker@paths~position-yet-elsewhere:~$ /challenge/run
+Incorrect...
+You are not currently in the /usr/include directory.
+Please use the `cd` utility to change directory appropriately.
+hacker@paths~position-yet-elsewhere:~$ cd /usr/include
+hacker@paths~position-yet-elsewhere:/usr/include$ /challenge/run
 Correct!!!
 /challenge/run is an absolute path, invoked from the right directory!
 Here is your flag:
-pwn.college{wPw1hhXEM2LaSsOtci4ttcw_j6C.dhDN1QDL5gDN1czW}
+pwn.college{4Jw86Imc3qykpRloLY9JUfgbSFD.QX4QTN0wCN5UzNzEzW}
 ```
+
 
 ### topics learnt
 learned to traverse different directories
@@ -119,16 +133,28 @@ NA
 ## Challenge Name
 implicit relative path from/
 ### question
-pwn.college{YeJl0tcETuW1aSmxsPvjDNZHmmK.dlDN1QDL5gDN1czW}
+pwn.college{IkBY7VbbmgQh5lCzUsoQiAqbnQM.QX5QTN0wCN5UzNzEzW}
 
 used / went to directory then used relative path to the file
 ```bash
-ory
+hacker@paths~implicit-relative-paths-from-:~$ cd /
+hacker@paths~implicit-relative-paths-from-:/$ /challenge/run
+Incorrect...
+You invoked this challenge with an absolute path. This challenge needs a relative path!
+hacker@paths~implicit-relative-paths-from-:/$ cd /c
+-bash: cd: /c: No such file or directory
+hacker@paths~implicit-relative-paths-from-:/$ cd //c
+-bash: cd: //c: No such file or directory
+hacker@paths~implicit-relative-paths-from-:/$ c
+-bash: c: command not found
+hacker@paths~implicit-relative-paths-from-:/$ /c
+-bash: /c: No such file or directory
 hacker@paths~implicit-relative-paths-from-:/$ challenge/run
 Correct!!!
 challenge/run is a relative path, invoked from the right directory!
 Here is your flag:
-pwn.college{YeJl0tcETuW1aSmxsPvjDNZHmmK.dlDN1QDL5gDN1czW}
+pwn.college{IkBY7VbbmgQh5lCzUsoQiAqbnQM.QX5QTN0wCN5UzNzEzW}
+hacker@paths~implicit-relative-paths-from-:/$ 
 ```
 
 ### topics learnt
@@ -140,15 +166,31 @@ NA
 ## Challenge Name
 explicit relative path from/
 ### question
-pwn.college{ggraTwkkPPQLPY4dqrdxAQ6Gfaf.dBTN1QDL5gDN1czW}
+pwn.college{MLicXTVzGDUgbsOc-QD50P0KsFY.QXwUTN0wCN5UzNzEzW}
 used / went to the directory then used ./challenge/run
 
 ```bash
-/challenge/run
+hacker@paths~explicit-relative-paths-from-:~$ cd /
+hacker@paths~explicit-relative-paths-from-:/$ .
+-bash: .: filename argument required
+.: usage: . filename [arguments]
+hacker@paths~explicit-relative-paths-from-:/$ .challenge/run
+-bash: .challenge/run: No such file or directory
+hacker@paths~explicit-relative-paths-from-:/$ /challenge/run
+Incorrect...
+You invoked this challenge with an absolute path. This challenge needs a relative path!
+hacker@paths~explicit-relative-paths-from-:/$ /challenge/.run
+-bash: /challenge/.run: No such file or directory
+hacker@paths~explicit-relative-paths-from-:/$ cd/challenge
+-bash: cd/challenge: No such file or directory
+hacker@paths~explicit-relative-paths-from-:/$ ./challenge/run
 Correct!!!
 ./challenge/run is a relative path, invoked from the right directory!
 Here is your flag:
-pwn.college{ggraTwkkPPQLPY4dqrdxAQ6Gfaf.dBTN1QDL5gDN1czW}
+pwn.college{MLicXTVzGDUgbsOc-QD50P0KsFY.QXwUTN0wCN5UzNzEzW}
+hacker@paths~explicit-relative-paths-from-:/$ 
+
+
 ```
 
 ### topics learnt
@@ -164,15 +206,17 @@ NA
 ## Challenge Name
 Implicit Relative Path
 ### question
-pwn.college{w6RqxVB3sktWrOEH_l5NOvdZesn.dFTN1QDL5gDN1czW}
+pwn.college{gUznquOjbQRKoEXgqER7nv7plSw.QXxUTN0wCN5UzNzEzW}
 
-entered driectory of challenge and used ./flag 
+entered directory of challenge and used ./flag 
 ```bash
-./run
+hacker@paths~implicit-relative-path:~$ cd /challenge
+hacker@paths~implicit-relative-path:/challenge$ ./run
 Correct!!!
 ./run is a relative path, invoked from the right directory!
 Here is your flag:
-pwn.college{w6RqxVB3sktWrOEH_l5NOvdZesn.dFTN1QDL5gDN1czW}
+pwn.college{gUznquOjbQRKoEXgqER7nv7plSw.QXxUTN0wCN5UzNzEzW}
+
 ```
 
 ### topics learnt
@@ -183,13 +227,32 @@ NA
 ## Challenge Name
 Home Sweet Home
 ### question
-pwn.college{8_o0RhL0eqSsBypu9oDPyBEFOnn.dNzM4QDL5gDN1czW}
+pwn.college{86Blh3ukAabrXWwMblNcdx7doyO.QXzMDO0wCN5UzNzEzW}
 ```bash
-/challenge/run ~/f
-Writing the file to /home/hacker/f!
+hacker@paths~home-sweet-home:~$ /challenge/run
+You must provide an argument to /challenge/run when you invoke it!
+hacker@paths~home-sweet-home:~$ /challenge/run~/a
+-bash: /challenge/run~/a: No such file or directory
+hacker@paths~home-sweet-home:~$ cd challenge
+-bash: cd: challenge: No such file or directory
+hacker@paths~home-sweet-home:~$ cd /
+hacker@paths~home-sweet-home:/$ challenge/run~/a
+-bash: challenge/run~/a: No such file or directory
+hacker@paths~home-sweet-home:/$ /challenge/run~/a
+-bash: /challenge/run~/a: No such file or directory
+hacker@paths~home-sweet-home:/$ ^C
+hacker@paths~home-sweet-home:/$ /challenge/run ~/ae
+The argument you provided must not have been longer than 3 characters (it's 
+currently 4 characters long)!
+hacker@paths~home-sweet-home:/$ /challenge/run ~/a
+Writing the file to /home/hacker/a!
 ... and reading it back to you:
-pwn.college{8_o0RhL0eqSsBypu9oDPyBEFOnn.dNzM4QDL5gDN1czW}
+pwn.college{86Blh3ukAabrXWwMblNcdx7doyO.QXzMDO0wCN5UzNzEzW}
+hacker@paths~home-sweet-home:/$ ^C
+hacker@paths~home-sweet-home:/$
 ```
+
+
 
 ### topics learnt
 learnt to write name of file with the help of home directory , start w ~home
