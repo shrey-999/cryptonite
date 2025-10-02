@@ -1,5 +1,3 @@
-Understood. Here is the documentation for the "Terminal Multiplexing" module, updated with the format and new random flags you requested.
-
 # Module Name
 
 Terminal Multiplexing
