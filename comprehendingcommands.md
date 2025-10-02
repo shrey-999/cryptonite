@@ -282,11 +282,12 @@ find /flag/home/hacker
 cat f
 ```
 
-### New Learnings
+### topics learnt
 learnt to find a particualr name from the list of files
 
 ### References 
-na
+NA
+
 
 
 
